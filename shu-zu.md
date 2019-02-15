@@ -29,5 +29,62 @@ let array2:[Any] = ["zhangsan",12]
 print(array2)
 ```
 
+判断数组是否为空
+
+```swift
+var array = [String]()
+array.isEmpty() //判断是否为空，为空则为true
+```
+
+插入元素
+
+```swift
+var array = [String]()
+array.insert("guoli",at:10)
+```
+
+删除元素
+
+```swift
+var array = [String]()
+array.remove(at:3)
+array.removeFirst()
+array.removeLast()
+```
+
+修改元素
+
+```swift
+var array = [String]()
+array[0] = "A"
+```
+
+数组遍历
+
+```swift
+let array3 = ["123","234","345"]
+
+//元素遍历
+for item in array3 {
+    print(item)
+}
+
+//下标遍历
+for i in 0..<array3.count {
+    print(array3[i])
+}
+
+//局部遍历
+for item in array3[0..<2] {
+    print(item)
+}
+
+//元祖方式遍历
+for (index,value) in array3.enumerated() {
+    print("索引为\(index)的元素值为\(value)")
+}
+
+```
+
 
 
