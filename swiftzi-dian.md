@@ -59,5 +59,18 @@ for (index, value) in dict2.enumerated() {
 }
 ```
 
+* 字典的合并
+
+```swift
+var a = ["name":"zhangsan","id":"123456"]
+var b = ["sex":"male","class":"grad3 1"]
+
+for (key, value) in b {
+    a[key] = value
+}
+print(a)
+
+```
+
 
 
