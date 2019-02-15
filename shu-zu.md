@@ -83,7 +83,23 @@ for item in array3[0..<2] {
 for (index,value) in array3.enumerated() {
     print("索引为\(index)的元素值为\(value)")
 }
+```
 
+数组的合并
+
+```swift
+//相同类型的合并
+let a = ["1","2","3"]
+let b = ["a","b","c"]
+let c = a + b
+print(c)
+
+//不同类型的合并的时候使用Any来声明数组
+let a: [Any] = ["1","2","3"]
+let b: [Any] = ["a","b","c"]
+let d: [Any] = [1, 2, 3]
+let e: [Any] = b + d
+print(e)
 ```
 
 
