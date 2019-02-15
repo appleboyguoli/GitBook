@@ -43,12 +43,19 @@ dict2.removeValue(forKey: "name")
 * 字典的遍历
 
 ```swift
+//元素遍历
 for item in dict2 {
     print(item)
 }
 
+//键值对遍历
 for (key, value) in dict2 {
     print("key is \(key) value is \(value)")
+}
+
+//元祖遍历
+for (index, value) in dict2.enumerated() {
+    print("index is \(index) value is \(value)")
 }
 ```
 
