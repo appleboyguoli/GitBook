@@ -64,8 +64,6 @@ p.name
 p.age
 ```
 
-
-
 * 函数给我们留下的坑
 * * 注意一，函数的参数虽然没有使用var和let修饰，但它是常量，不能再函数内修饰
 
@@ -75,10 +73,29 @@ func say(message: String){
     message = "Hello Swift"
     print("说话内容: \(message)")
 }
-
 ```
 
 * * 注意二：每一个函数的形式参数都包含_形式参数标签_和形式参数名两部分
+  * * 形式参数标签用在调用函数的时候
+    * 形式参数名用在函数的实现当中
+    * 在调用函数的时候每一个形式参数前边都要写形式参数标签
+    * 默认情况下，形式参数使用它们的形式参数名作为形式参数标签
+    * 如果不想要形式参数标签，可以再参数名称前加\_
+
+  ```swift
+  //a 与 b为形式参数标签，num1与num2为形式参数名
+  func minus(a num1: Int, b num2: Int) -> Int{
+      return num1 - num2
+  }
+
+  minus(a: 10, b: 3)
+
+  func multi(_ num1: Int, _ num2: Int) -> Int{
+      return num1 * num2
+  }
+
+  multi(10, 3)
+  ```
 
 
 
