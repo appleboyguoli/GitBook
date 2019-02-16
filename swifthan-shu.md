@@ -97,5 +97,34 @@ func say(message: String){
   multi(10, 3)
   ```
 
+* 默认参数
+* ```swift
+  //默认参数
+  func makeCoffee(type: String = "卡布奇诺") -> String{
+      return "您点了一杯\(type)咖啡"
+  }
+  print(makeCoffee(type: "拿铁"))
+  print(makeCoffee())
+
+  ```
+
+* 可变参数
+* ```swift
+  //可变参数
+  func total(numbers: Int...) -> Int{
+      //numbers 是什么类型
+      var sum = 0
+
+      for item  in numbers {
+          sum += item
+      }
+      return sum
+  }
+
+  print(total())
+  print(total(numbers: 1,2,3,4))
+  print(total(numbers: 10,13))
+  ```
+
 
 
