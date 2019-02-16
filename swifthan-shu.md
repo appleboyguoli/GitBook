@@ -124,10 +124,10 @@ func say(message: String){
   print(total(numbers: 1,2,3,4))
   print(total(numbers: 10,13))
   ```
-
 * 引用类型
+
 * ```swift
-  //inout 关键字
+  //inout 关键字，inout表示接收的是传过来的地址
   func swapInt(a: inout Int, b: inout Int){
       let temp = a
       a = b
@@ -140,7 +140,6 @@ func say(message: String){
 
   swap(&a, &b)
   print("a = \(a) b = \(b)")
-
   ```
 
 
