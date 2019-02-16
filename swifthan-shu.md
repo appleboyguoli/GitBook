@@ -96,8 +96,8 @@ func say(message: String){
 
   multi(10, 3)
   ```
-
 * 默认参数
+
 * ```swift
   //默认参数
   func makeCoffee(type: String = "卡布奇诺") -> String{
@@ -105,10 +105,9 @@ func say(message: String){
   }
   print(makeCoffee(type: "拿铁"))
   print(makeCoffee())
-
   ```
-
 * 可变参数
+
 * ```swift
   //可变参数
   func total(numbers: Int...) -> Int{
@@ -124,6 +123,24 @@ func say(message: String){
   print(total())
   print(total(numbers: 1,2,3,4))
   print(total(numbers: 10,13))
+  ```
+
+* 引用类型
+* ```swift
+  //inout 关键字
+  func swapInt(a: inout Int, b: inout Int){
+      let temp = a
+      a = b
+      b = temp
+  }
+
+  var a = 10
+  var b = 20
+  print("a = \(a) b = \(b)")
+
+  swap(&a, &b)
+  print("a = \(a) b = \(b)")
+
   ```
 
 
