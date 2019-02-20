@@ -141,8 +141,8 @@ func say(message: String){
   swap(&a, &b)
   print("a = \(a) b = \(b)")
   ```
-
 * 函数的嵌套
+
 * ```swift
   //函数的嵌套
   let value = 55
@@ -156,12 +156,29 @@ func say(message: String){
 
   test()
   ```
-
 * 函数的类型
+
 * * 每个函数都有属于自己的类型，由函数的参数类型和返回类型组成
   * 下面的例子定义了两个简单的数学函数，addTwoInts和multiplyTwoInts，这两个函数都传入两个Int类型，返回一个合适的Int值，因此这两个函数的类型是\(int, int\) -&gt; Int
-* ```
 
+  ```Swift
+  var test1 = (Int, Int) -> Int;
+  ```
+
+* * 函数的参数是函数
+
+  ```Swift
+  func printReuslt(a:Int, b:Int, c:(Int, Int)->Int){
+      c(a, b)
+  }
+  ```
+
+* * 函数的返回值是函数
+
+  ```Swift
+  func printReuslt(a: Int, b: Int) -> (Int, Int)->Int{
+      return sum;
+  }
   ```
 
 
