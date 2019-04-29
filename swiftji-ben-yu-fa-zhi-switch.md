@@ -6,7 +6,7 @@
         default:
             print("default")
         }
-        
+
         //Swift 多条件判断
         let someCharacter: Character = "0"
         switch someCharacter {
@@ -17,7 +17,7 @@
         default:
             print("\(someCharacter) is not a vowel or a consonant")
         }
-        
+
         //元祖匹配
         let tumple = (70,80)
         switch tumple {
@@ -32,9 +32,9 @@
         default:
             print("你的成绩木有及格")
         }
-        
-        
-        
+
+
+
         //where子句配合Switch
         let tumple1 = (70,90)
         switch tumple1 {
@@ -45,8 +45,8 @@
         default:
             print("你的成绩木有及格")
         }
-        
-        
+
+
         //字符串匹配中使用Where子句
         let tempString = "ABC"
         switch tempString {
@@ -57,7 +57,6 @@
         default:
             print("what?!!")
         }
-        
 ```
 
 

@@ -43,8 +43,6 @@ func optionAge(){
 optionAge()
 ```
 
-
-
 guard 语句出现的条件
 
 因为我们经常会写if嵌套
@@ -52,12 +50,12 @@ guard 语句出现的条件
 ```swift
 f 条件1
   {
-        
+
       if 条件2
                   {  //do something}
          else
                   {   //do something }
-    
+
   }
 else
  {    //do something     }
@@ -71,15 +69,14 @@ else
          //do something 
         return
     }
-    
+
     guard 条件2 else
    {
          //do something 
         return
     }
-    
-     //do something 
 
+     //do something
 ```
 
 举例
@@ -113,5 +110,73 @@ func checkTicket(ticket:Ticket?,currentMovieName:String)
 }
 ```
 
+if let 和 guard 只是语法糖，没有也可以，但有了可以使得代码更简洁方便。要理解 if let 和 guard，不妨设想假如没有这两者，代码会怎么写。
+
+------------------------------------  
+
+
+**if let**
+
+```Swift
+if let
+func doSomething(str: String?)
+{
+    let v: String! = str
+    if v != nil
+    {
+        // use v to do something
+    }
+}
+
+```
+
+Swift 中因为有optional, 经常需要判断是否为空。假如没有if let，大致写成上面的样子，有了if let, 可以改写成
+
+```
+func doSomething(str: String?)
+{
+    if let v = str
+    {
+        // use v to do something
+    }
+}
+
+```
+
+上面两段代码的控制流是一样的。对照着，可以看出if let的写法更加简洁方便。
+
+------------------------------------
+
+**guard**
+
+假如if中出现的代码很长，我们写代码时可以将错误情况先返回。比如：
+
+```
+func doSomething(str: String?)
+{
+    let v: String! = str
+    if v == nil
+    {
+        return
+    }
+
+    // use v to do something
+}
+
+```
+
+这样做可以避免过多的嵌套。上面代码实在太常见了，swift也提供一个guard这个语法糖，用guard可以改写成：
+
+```
+func doSomething(str: String?)
+{
+    guard let v = str else { return }
+
+    // use v to do something
+}
+
+```
+
+上面两段代码的控制流是一样的。也可以看出guard的写法更加简洁方便。  
 
 
