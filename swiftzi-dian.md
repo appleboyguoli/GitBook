@@ -19,6 +19,12 @@ var dict1: [String: Any] = [String: Any]()
 
 //定义一个不可变字典
 let dict2: [String: Any] = ["name": "zhangsan","age":10]
+
+//初始化一个空字典
+var dict1:Dictionary<Int,String> = [:]//其中键是Int型  值是String型
+var dict2:[String:String] = [:]//其中键、值都是String型
+var dict3 = [String:String]()
+var dict4 = Dictionary<String,String>()
 ```
 
 * 在声明一个Dictionary类型的时候可以使用下面的语句之一
@@ -69,7 +75,6 @@ for (key, value) in b {
     a[key] = value
 }
 print(a)
-
 ```
 
 
