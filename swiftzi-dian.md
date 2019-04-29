@@ -77,5 +77,58 @@ for (key, value) in b {
 print(a)
 ```
 
+字典keys和values的值获取
+
+
+
+```
+//
+```
+
+```
+当只是需要使用某个字典的键集合或者值集合来作为某个接收Array 可以直接使用keys或者values属性构造一个新数组
+
+        let dictKeyArray =
+ [String](dict.keys)
+        let dictValuesArray 
+=
+ [Any](dict.values)
+        print(
+"
+dictKeyArray = \(dictKeyArray) \n dictValuesArray = \(dictValuesArray)
+"
+)
+
+```
+
+```swift
+//当只是需要使用某个字典的键集合或者值集合来作为某个接收Array 可以直接使用keys或者values属性构造一个新数组
+let dictKeyArray = [String](dict.keys)
+let dictValuesArray = [Any](dict.values)        
+print("dictKeyArray = \(dictKeyArray) \n dictValuesArray = \(dictValuesArray)")
+```
+
+字典的遍历
+
+```swift
+//字典的遍历，使用for - in 循环来遍历字典中的键值对，每个字典中的数据项都以（key，value）元组的形式返回，可以使用临时常量或者变量来分解这些元组
+for dictValure in dict {
+        print("字典遍历的结果:\(dictValure)")
+}
+/**
+ 输出结果：
+ 字典遍历的结果:(key: "name", value: "sunfusheng")
+ 字典遍历的结果:(key: "age", value: 20)         字典遍历的结果:(key: "blog", value: "sunfusheng.com")
+ */
+        
+        
+//可以单独遍历出字典里的所有keys 或 values值
+//(1)获取字典中所有的键
+for dictKey in dict.keys {
+    print("dictKey = \(dictKey)")
+}
+
+```
+
 
 
