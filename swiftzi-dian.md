@@ -79,8 +79,6 @@ print(a)
 
 字典keys和values的值获取
 
-
-
 ```
 //
 ```
@@ -98,7 +96,6 @@ print(a)
 dictKeyArray = \(dictKeyArray) \n dictValuesArray = \(dictValuesArray)
 "
 )
-
 ```
 
 ```swift
@@ -120,14 +117,13 @@ for dictValure in dict {
  字典遍历的结果:(key: "name", value: "sunfusheng")
  字典遍历的结果:(key: "age", value: 20)         字典遍历的结果:(key: "blog", value: "sunfusheng.com")
  */
-        
-        
+
+
 //可以单独遍历出字典里的所有keys 或 values值
 //(1)获取字典中所有的键
 for dictKey in dict.keys {
     print("dictKey = \(dictKey)")
 }
-
 ```
 
 
