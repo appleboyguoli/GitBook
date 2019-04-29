@@ -6,8 +6,6 @@ Swift的可选类型，option ，为啥要出现这么个鬼东西？
 
 可选类型的含义是变量或者常量或者有值，或者为nil。
 
-
-
 声明可选类型的时候必须要指定其数据类型。因为可能为空。
 
 Option类型的变量又分为显示解包和隐式解包
@@ -26,13 +24,11 @@ name = "zhangguoli"
 //加上叹号显示解包
 print(name!)
 
-//用ifl进行隐式解包
+//用if进行隐式解包
 if let name = name {
     print(name)
 }
 ```
-
-
 
 
 

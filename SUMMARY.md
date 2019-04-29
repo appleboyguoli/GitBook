@@ -8,4 +8,5 @@
 * [Swift字典](swiftzi-dian.md)
 * [Swift函数](swifthan-shu.md)
 * [Swift闭包](swiftbi-bao.md)
+* [Swift枚举](swiftmei-ju.md)
 
