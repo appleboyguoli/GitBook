@@ -43,7 +43,7 @@
 
 
     print(getScore(score: [65, 75, 85, 95], con: {(s:Int)->Bool in return s > 80}))
-    
+
     //闭包的缩写
     print(getScore(score: [65, 75, 85, 95], con: {(s:Int)->Bool in return s > 80}))
     print(getScore(score: [65, 75, 85, 95], con: {(s:Int) in return s > 80})) 
