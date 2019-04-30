@@ -9,5 +9,5 @@
 * [Swift字典](swiftzi-dian.md)
 * [Swift函数](swifthan-shu.md)
 * [Swift闭包](swiftbi-bao.md)
-* Swift基本语法之Switch
+* [Swift基本语法之Switch](swiftji-ben-yu-fa-zhi-switch.md)
 
